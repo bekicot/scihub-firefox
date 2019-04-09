@@ -13,7 +13,8 @@ async function updateCurrentPage(details) {
 }
 
 browser.webRequest.onBeforeRequest.addListener(updateCurrentPage, {
-  urls: ["<all_urls>"]
+  urls: ["<all_urls>"],
+  types: ["main_frame"]
 });
 
 
