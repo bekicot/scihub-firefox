@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "View on Sci-Hub ",
+  "description": "View paper on sci-hub. It will append the current url to sci-hub.",
+  "author": "Yana Agun Siswanto",
+  "homepage-url": "http://github.com/bekicot/scihub-firefox",
+
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*",
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/raven-32.png",
+    "default_title": "View on Sci-Hub"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "icons": {
+    "48": "icons/raven-48.png"
+  }
+}
