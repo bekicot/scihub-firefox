@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "name": "View on Sci-Hub ",
   "description": "View paper on sci-hub. It will append the current url to sci-hub.",
   "author": "Yana Agun Siswanto",
