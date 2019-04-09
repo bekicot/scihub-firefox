@@ -27,5 +27,12 @@
 
   "icons": {
     "48": "icons/raven-48.png"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{2f94dfe3-e0ac-463a-a565-7d25a00ea20a}",
+      "strict_min_version": "55.0"
+    }
   }
 }
