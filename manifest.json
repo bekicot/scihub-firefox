@@ -34,5 +34,9 @@
       "id": "{2f94dfe3-e0ac-463a-a565-7d25a00ea20a}",
       "strict_min_version": "55.0"
     }
+  },
+
+  "options_ui": {
+    "page": "options.html"
   }
 }
