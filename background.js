@@ -1,15 +1,24 @@
-async function openSciHubPdf() {
-  browser.storage.local.get("currentUrl", function (storage) {
+const SCIHUB_URL = 'scihub_url';
+const DEFAULT_SCIHUB_URL = 'https://sci-hub.tw/';
+const CURRENT_URL = "current_url";
+let storage = browser.storage.sync;
+let config = {};
+
+config[SCIHUB_URL] = DEFAULT_SCIHUB_URL;
+config[CURRENT_URL] = null;
+
+function openSciHubPdf() {
+  storage.get(config, function (config) {
     browser.tabs.create({
-      url: "https://sci-hub.tw/" + storage.currentUrl,
+      url: config[SCIHUB_URL] + '/' + config[CURRENT_URL],
     });
   })
 }
 
-async function updateCurrentPage(details) {
-  return browser.storage.local.set({
-    currentUrl: details.url,
-  })
+function updateCurrentPage(details) {
+  let config = {};
+  config[CURRENT_URL] = details.url;
+  return storage.set(config);
 }
 
 browser.webRequest.onBeforeRequest.addListener(updateCurrentPage, {
