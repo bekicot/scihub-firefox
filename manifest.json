@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "0.0.3",
+  "version": "0.0.5",
   "name": "View on Sci-Hub ",
   "description": "View paper on sci-hub. It will append the current url to sci-hub.",
   "author": "Yana Agun Siswanto",
@@ -32,7 +32,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "{2f94dfe3-e0ac-463a-a565-7d25a00ea20a}",
-      "strict_min_version": "55.0"
+      "strict_min_version": "57.0"
     }
   },
 
