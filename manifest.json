@@ -4,7 +4,7 @@
   "name": "View on Sci-Hub ",
   "description": "View paper on sci-hub. It will append the current url to sci-hub.",
   "author": "Yana Agun Siswanto",
-  "homepage-url": "http://github.com/bekicot/scihub-firefox",
+  "homepage_url": "http://github.com/bekicot/scihub-firefox",
 
   "permissions": [
     "activeTab",
